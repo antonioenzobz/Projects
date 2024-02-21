@@ -1,4 +1,4 @@
-print ("------------- CALCULADORAEQUAÇÃO DE SEGUNDO GRAU --------------")
+print ("------------- CALCULADOR DE EQUAÇÃO DE SEGUNDO GRAU --------------")
 
 #Definindo as variáveis
 a = float(input("Coeficiente a:"))
