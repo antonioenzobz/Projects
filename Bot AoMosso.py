@@ -6,17 +6,21 @@ import time
 # Instanciando o driver do Chrome e entrando no site
 service = Service(ChromeDriverManager().install())
 navegador = webdriver.Chrome(service=service)
-navegador.get('https://docs.google.com/forms/d/e/1FAIpQLSfhkPYL4jX3Ld9ns_bW51LTrB5xCSOvIFRVemowsDZRtDRIwg/viewform')
+navegador.get('https://docs.google.com/forms/d/e/1FAIpQLSeHB8Hs9mUFMCeqiOTEJuJ69pJDDY1hBllc69Q1WhvE0iJjqQ/viewform?pli=1')
 navegador.maximize_window()
 
 # Marcando as caixas de respostas
-navegador.find_element('xpath', '//*[@id="i6"]/div[2]').click()
+navegador.find_element('xpath', '//*[@id="i5"]/div[2]').click()
 time.sleep(0.5)
-navegador.find_element('xpath', '//*[@id="i16"]/div[3]/div').click()
+navegador.find_element('xpath', '//*[@id="i12"]/div[3]/div').click()
+time.sleep(0.5)
+navegador.find_element('xpath', '//*[@id="i38"]/div[3]/div').click()
 time.sleep(0.5)
 
+
+
 # Enviando o formulário
-navegador.find_element('xpath', '//*[@id="mG61Hd"]/div[2]/div/div[3]/div/div[1]/div/span/span').click()
+navegador.find_element('xpath', '//*[@id="mG61Hd"]/div[2]/div/div[3]/div[2]/div[1]/div/span/span').click()
 time.sleep(0.5)
 
 # Fechando o navegador
